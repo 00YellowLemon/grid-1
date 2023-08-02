@@ -1,0 +1,115 @@
+:root{
+--violet: hsl(263, 55%, 52%);
+--darkGrayishBlue: hsl(217, 19%, 35%);
+--darkBlackishBlue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+
+
+--LightGray: hsl(0, 0%, 81%);
+--LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGrayishBlue);
+}
+.container{
+    display: grid;
+    width: min(100%, 1100px);
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+.card{
+   padding: 20px;
+   font-size: 13px;
+   box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+   color: var(--darkGrayishBlue);
+   background-color: var(--White);
+   border-radius: 5px;
+
+
+}
+.head{
+   display: flex;
+   align-items: center;
+   font-size: 13px;
+   gap: 10px;
+   z-index: 56;
+}
+.head p{
+    opacity: 30%;
+}
+.bold{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 20px 0 20px ;
+    z-index: 56;
+}
+.light{
+    opacity: 70%;
+}
+img{
+    border-radius:50%;
+}
+.pup{
+  
+   background-color: var(--violet);
+   grid-column: span 2;
+   color: var(--LightGrayishBlue);
+   position: relative;
+}
+.abs{
+    position: absolute;
+    right: 30%;
+    top: 0;
+    border-radius: 0;
+
+
+}
+.black{
+
+    grid-column: 2/4; 
+    background-color: var(--darkBlackishBlue);
+    color: var(--LightGrayishBlue);
+    order: 2;
+
+}
+.spanW{
+    grid-row: span 2;
+}
+.grey{
+    background-color: var(--darkGrayishBlue);
+    color: var(--LightGrayishBlue);
+}
+@media(max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+
+    }
+}
